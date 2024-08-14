@@ -1,4 +1,3 @@
-```java
 package com.datorium.Datorium.API.Controllers;
 import com.datorium.Datorium.API.DTOs.User;
 import org.springframework.web.bind.annotation.*;
@@ -23,4 +22,4 @@ public class UserController {
         return userService.getAllUsers();
     }
 }
-```
+
