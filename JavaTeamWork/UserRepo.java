@@ -12,7 +12,7 @@ public class UserRepo {
         users.add(user);
         return users.size();
     }
-    // New method to get all users
+    // This is a method to get all users
     public List<User> getAllUsers() {
         return users;
     }
