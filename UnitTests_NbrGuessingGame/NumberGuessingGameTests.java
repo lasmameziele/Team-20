@@ -5,42 +5,42 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumberGuessingGameTests {
 
-    // Test when the guess is correct
+    // My test 1 when the guess is correct
     @Test
-    void testCorrectGuess() {
-        // Arrange (Set up the game with target number 5)
-        NumberGuessingGame game = new NumberGuessingGame(5);
+    void CorrectGuess() {
+        // Arrange (Set up the game with target number 3)
+        NumberGuessingGame game = new NumberGuessingGame(3);
 
-        // Act (Guess the number 5)
-        int result = game.guess(5);
+        // Act (Guess the number 3)
+        int result = game.guess(3);
 
         // Assert (Check if the result is 1, which means the guess was correct)
-        assertEquals(1, result, "The guess should be correct (1)");
+        assertEquals(1, result, "The guess supposed to be correct (1)");
     }
 
-    // Test when the guess is too big
+    // My test 2 when the guess is too big
     @Test
-    void testGuessTooBig() {
+    void GuessTooBig() {
         // Arrange
-        NumberGuessingGame game = new NumberGuessingGame(5);
+        NumberGuessingGame game = new NumberGuessingGame(77);
 
-        // Act (Guess the number 10, which is too big)
-        int result = game.guess(10);
+        // Act (Guess the number 100, which is too big)
+        int result = game.guess(100);
 
         // Assert (Check if the result is 3, meaning the guess was too big)
-        assertEquals(3, result, "The guess should be too big (3)");
+        assertEquals(3, result, "The guess supposed to be too big (3)");
     }
 
-    // Test when the guess is too small
+    // My test 3 when the guess is too small
     @Test
-    void testGuessTooSmall() {
+    void GuessTooSmall() {
         // Arrange
-        NumberGuessingGame game = new NumberGuessingGame(5);
+        NumberGuessingGame game = new NumberGuessingGame(33);
 
-        // Act (Guess the number 2, which is too small)
-        int result = game.guess(2);
+        // Act (Guess the number 11, which is too small)
+        int result = game.guess(11);
 
-        // Assert (Check if the result is 2, meaning the guess was too small)
+        // Assert (Check if the result is 11, meaning the guess was too small)
         assertEquals(2, result, "The guess should be too small (2)");
     }
 }
